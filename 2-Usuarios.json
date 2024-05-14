@@ -1,0 +1,94 @@
+[
+    {
+        "model": "app.usuario",
+        "pk": 2,
+        "fields": {
+            "nombres": "Arrendatario",
+            "apellidos": "Pérez",
+            "rut": "1234567832",
+            "direccion": "Av. Libertad #123",
+            "telefono": "987654321",
+            "tipo_usuario": "arrendatario",
+            "correo_electronico": "arrendatario.perez@example.com"
+        }
+    },
+    {
+        "model": "app.usuario",
+        "pk": 3,
+        "fields": {
+            "nombres": "Arrendador",
+            "apellidos": "González",
+            "rut": "1234567891",
+            "direccion": "Av. Argentina #123",
+            "telefono": "123456789",
+            "tipo_usuario": "arrendador",
+            "correo_electronico": "arrendador.gonzalez@correo.com"
+        }
+    },
+    {
+        "model": "app.usuario",
+        "pk": 4,
+        "fields": {
+            "nombres": "Jaime Alejandro",
+            "apellidos": "Godoy Perez",
+            "rut": "1234567892",
+            "direccion": "Av. Providencia #456",
+            "telefono": "555555555",
+            "tipo_usuario": "arrendador",
+            "correo_electronico": "jaime.godoy@correo.com"
+        }
+    },
+    {
+        "model": "app.usuario",
+        "pk": 5,
+        "fields": {
+            "nombres": "Chris",
+            "apellidos": "Redfield",
+            "rut": "1234567893",
+            "direccion": "Raccon city #1998",
+            "telefono": "333333333",
+            "tipo_usuario": "arrendador",
+            "correo_electronico": "chris.redfield@correo.com"
+        }
+    },
+    {
+        "model": "app.usuario",
+        "pk": 6,
+        "fields": {
+            "nombres": "Cristobal Alonso",
+            "apellidos": "Tapia Martinez",
+            "rut": "1234567894",
+            "direccion": "Av. Kennedy #1010",
+            "telefono": "999999999",
+            "tipo_usuario": "arrendatario",
+            "correo_electronico": "cris.tapia@correo.com"
+        }
+    },
+    {
+        "model": "app.usuario",
+        "pk": 7,
+        "fields": {
+            "nombres": "Miguel Mich",
+            "apellidos": "Arc Ciel",
+            "rut": "1234567895",
+            "direccion": "Cielo #777",
+            "telefono": "777777777",
+            "tipo_usuario": "arrendador",
+            "correo_electronico": "laura.ramirez@correo.com"
+        }
+    },
+    {
+        "model": "app.usuario",
+        "pk": 8,
+        "fields": {
+            "nombres": "Jason Luis",
+            "apellidos": "Cheetham Kay",
+            "rut": "1234567896",
+            "direccion": "Av. Jamiroquai #789",
+            "telefono": "888888888",
+            "tipo_usuario": "arrendatario",
+            "correo_electronico": "jay.kay@correo.com"
+        }
+    }
+    
+]

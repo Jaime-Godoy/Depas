@@ -1,0 +1,63 @@
+Región: Antofagasta
+Nombre: casa 6
+Descripción: Casa estilo colonial
+
+Nombre: parcela 4
+Descripción: Parcela con casa de campo
+
+Nombre: casa 5
+Descripción: Casa moderna con piscina
+
+Nombre: departamento 5
+Descripción: Departamento en zona residencial
+
+Nombre: parcela 6
+Descripción: Parcela con vistas a la montaña
+
+Nombre: departamento 7
+Descripción: Departamento con balcón
+
+Nombre: casa 7
+Descripción: Casa con amplio patio trasero
+
+Nombre: parcela 5
+Descripción: Parcela con hermoso entorno natural
+
+Nombre: departamento 6
+Descripción: Departamento con diseño moderno
+
+Región: Arica y Parinacota
+Nombre: departamento 1
+Descripción: Departamento amplio con vista panorámica
+
+Nombre: parcela 1
+Descripción: Parcela con amplio terreno y casa
+
+Nombre: parcela 1
+Descripción: Parcela con amplio terreno y casa
+
+Nombre: casa 2
+Descripción: Casa acogedora con jardín
+
+Región: Tarapacá
+Nombre: parcela 3
+Descripción: Parcela con casa campestre
+
+Nombre: departamento 4
+Descripción: Departamento con terraza
+
+Nombre: casa 4
+Descripción: Casa con amplio jardín
+
+Nombre: parcela 2
+Descripción: Parcela con vista panorámica
+
+Nombre: departamento 3
+Descripción: Departamento con excelente vista
+
+Nombre: casa 3
+Descripción: Casa amplia y luminosa
+
+Nombre: departamento 2
+Descripción: Departamento moderno en excelente ubicación
+

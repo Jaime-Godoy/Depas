@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}Página de Inicio{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <h2>Generar Solicitud de Arriendo</h2>
+    <form method="post" class="mt-4">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="id_inmueble" class="form-label">Inmueble: {{ form.inmueble.value }} </label>
+        <input type="text" class="form-control" id="id_inmueble" name="inmueble" value="{{ form.inmueble.value }}" hidden>
+      </div>
+      <div class="mb-3">
+        <label for="id_mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="id_mensaje" name="mensaje" rows="3">{{ form.mensaje.value }}</textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+    </form>
+  </div>
+      {% comment %} <form method="post">
+        <h1 class="mb-4">Generar Solicitud de Arriendo</h1>
+        {% csrf_token %}
+        <div class="mb-3">
+            {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar Solicitud</button>
+    </form> {% endcomment %}
+    
+{% endblock %}

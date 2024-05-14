@@ -1,0 +1,80 @@
+Comuna: Alto Hospicio
+Nombre: departamento 2
+Descripción: Departamento moderno en excelente ubicación
+
+Comuna: Antofagasta
+Nombre: casa 5
+Descripción: Casa moderna con piscina
+
+Comuna: Arica
+Nombre: departamento 1
+Descripción: Departamento amplio con vista panorámica
+
+Comuna: Calama
+Nombre: departamento 5
+Descripción: Departamento en zona residencial
+
+Comuna: Camarones
+Nombre: parcela 1
+Descripción: Parcela con amplio terreno y casa
+
+Comuna: Camiña
+Nombre: casa 3
+Descripción: Casa amplia y luminosa
+
+Comuna: Colchane
+Nombre: departamento 3
+Descripción: Departamento con excelente vista
+
+Comuna: General Lagos
+Nombre: parcela 1
+Descripción: Parcela con amplio terreno y casa
+
+Comuna: Huara
+Nombre: parcela 2
+Descripción: Parcela con vista panorámica
+
+Comuna: Iquique
+Nombre: casa 4
+Descripción: Casa con amplio jardín
+
+Comuna: María Elena
+Nombre: parcela 4
+Descripción: Parcela con casa de campo
+
+Comuna: Mejillones
+Nombre: casa 6
+Descripción: Casa estilo colonial
+
+Comuna: Ollagüe
+Nombre: departamento 6
+Descripción: Departamento con diseño moderno
+
+Comuna: Pica
+Nombre: departamento 4
+Descripción: Departamento con terraza
+
+Comuna: Pozo Almonte
+Nombre: parcela 3
+Descripción: Parcela con casa campestre
+
+Comuna: Putre
+Nombre: casa 2
+Descripción: Casa acogedora con jardín
+
+Comuna: San Pedro de Atacama
+Nombre: parcela 5
+Descripción: Parcela con hermoso entorno natural
+
+Comuna: Sierra Gorda
+Nombre: casa 7
+Descripción: Casa con amplio patio trasero
+
+Comuna: Taltal
+Nombre: departamento 7
+Descripción: Departamento con balcón
+
+Comuna: Tocopilla
+Nombre: parcela 6
+Descripción: Parcela con vistas a la montaña
+

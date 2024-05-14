@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.region{
+    width: 300px;  
+}
+
+/* Estilo para las imágenes de las cards */
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+  }

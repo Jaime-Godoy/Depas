@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}Página de Inicio{% endblock %}
+{% load static %}
+{% block content %}    
+<section class="container mx-auto pt-5">
+  <h2>Bienvenido a Only Depas</h2>
+  <p>Tenemos disponibles los siguientes inmuebles:</p>
+  <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+      {% for inm in inmuebles %}
+          <div class="col">
+              <div class="card h-100">
+                  <img class="card-img-top" src="media/{{inm.imagen}}" alt="Card image cap">
+                  <div class="card-body">
+                      <h5 class="card-title">{{ inm.name }}</h5>
+                      <p class="card-text text-justify">
+                          {% if inm.descripcion|length > 100 %}
+                              {{ inm.descripcion|slice:":100" }}... <a href="">descripción</a>
+                          {% else %}
+                              {{ inm.descripcion}}
+                          {% endif %}
+                      </p>
+                      <ul class="list-unstyled text-center">
+                        <li class="list-group-item"><i class="fas fa-ruler"></i> Dimensiones: {{ inm.m2_construidos }}</li>
+                        <li class="list-group-item"><i class="fas fa-bed"></i> Habitaciones: {{ inm.cantidad_habitaciones }}</li>
+                        <li class="list-group-item"><i class="fas fa-bath"></i> Baños: {{ inm.cantidad_banos }}</li>
+                      </ul>
+                  </div>
+                  <div class="card-footer text-end">
+                      <a href="{% url 'detalle' inm.id %}">Detalle</a>
+                  </div>
+              </div>
+          </div>
+      {% endfor %}  
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="col">
+  <div class="row">
+    <section>
+      {% if user.usuario.tipo_usuario == 'arrendatario' %}
+        <h2 class="mb-4">Estado de Solicitudes</h2>
+        <ul class="list-group">
+          {% for solicitud in solicitudes %}
+            <li class="list-group-item">{{ solicitud }}</li>
+          {% endfor %}
+        </ul>
+        <h2 class="mt-5">Inmuebles por Región y Comuna</h2>
+        <!-- Aquí puedes mostrar una lista de inmuebles filtrados por región y comuna -->
+      {% elif user.usuario.tipo_usuario == 'arrendador' %}
+        <!-- Contenido para arrendador -->
+      {% endif %}
+    </section>
+  </div>
+  <div class="row">
+    <section>
+      <h2 class="mb-4">Solicitudes Recibidas</h2>
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+        {% for solicitud in solicitudes_recibidas %}
+          <div class="col">
+            <div class="card text-primary mb-3" style="max-width: 18rem;">
+              <div class="card-header">{{ solicitud.estado }}</div>
+              <div class="card-body">
+                <h5 class="card-title">{{ solicitud }}</h5>
+                <p class="card-text">{{ solicitud.mensaje }}</p>
+                {% if solicitud.estado != 'aceptado' %}
+                  <form method="post" action="{% url 'cambiar_estado_solicitud' solicitud.id %}">
+                    {% csrf_token %}
+                    <select name="nuevo_estado" class="form-select mb-2">
+                      <option value="pendiente">Pendiente</option>
+                      <option value="aceptado">Aceptado</option>
+                      <option value="rechazado">Rechazado</option>
+                    </select>
+                    <button type="submit" class="btn btn-primary">Cambiar Estado</button>
+                  </form>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+  <div class="row">
+    <section class="container mx-auto pt-5">
+      <h2 class="mb-4">Tus Inmuebles</h2>
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
+        {% for inm in inmuebles %}
+          <div class="col">
+            <div class="card h-100">
+              <img class="card-img-top" src="/media/{{ inm.imagen }}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{ inm.name }}</h5>
+                <p class="card-text text-justify">
+                  {% if inm.descripcion|length > 100 %}
+                    {{ inm.descripcion|slice:":100" }}... <a href="#">descripcion</a>
+                  {% else %}
+                    {{ inm.descripcion }}
+                  {% endif %}
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="{% url 'detalle' inm.id %}" class="btn btn-primary">Detalle del Inmueble</a>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  </div>
+</div>
+
+{% endblock %}

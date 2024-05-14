@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Página de Inicio{% endblock %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <h1>Solicitudes Recibidas</h1>
+    <div class="card">
+      <ul class="list-group list-group-flush">
+        {% for solicitud in solicitudes %}
+        <li class="list-group-item">
+          <div class="mb-3">
+            <h5 class="card-title mb-0">Arrendatario: {{ solicitud.arrendatario }}</h5>
+            <p class="card-text mb-1">Inmueble: {{ solicitud.inmueble }}</p>
+            <p class="card-text mb-1">Mensaje: {{ solicitud.mensaje }}</p>
+          </div>
+        </li>
+        {% empty %}
+        <li class="list-group-item">No hay solicitudes recibidas.</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  
+   
+
+
+{% endblock %}

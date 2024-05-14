@@ -1,0 +1,32 @@
+{% load static %}
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Información de Contacto</h5>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-map-marker-alt me-2"></i>Dirección: Calle Principal 123, Ciudad</li>
+            <li><i class="fas fa-phone-alt me-2"></i>Teléfono: +123 456 7890</li>
+            <li><i class="fas fa-envelope me-2"></i>Correo electrónico: info@example.com</li>
+            <a class="navbar-brand" href="{% url 'index' %}">
+                <img src="{% static "onlydepas.png" %}" width="100px">
+            </a>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Enlaces Rápidos</h5>
+          <ul class="list-unstyled">
+            
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+        <p>&copy; 2024 OnlyDepas. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>

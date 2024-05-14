@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Página de Inicio{% endblock %}
+{% load static %}
+{% block content %}
+  <div class="col-md-6">
+    <div class="card mb-3">
+      <img src="{{ inmueble.imagen.url }}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{ inmueble.nombre }}</h5>
+        <p class="card-text">{{ inmueble.descripcion }}</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Dirección: {{ inmueble.direccion }}</li>
+          <li class="list-group-item">Precio: ${{ inmueble.precio }}</li>
+          <li class="list-group-item">Metros cuadrados construidos: {{ inmueble.m2_construidos }}</li>
+          <li class="list-group-item">Metros cuadrados de terreno: {{ inmueble.m2_terreno }}</li>
+          <li class="list-group-item">Cantidad de estacionamientos: {{ inmueble.cantidad_estacionamientos }}</li>
+          <li class="list-group-item">Cantidad de habitaciones: {{ inmueble.cantidad_habitaciones }}</li>
+          <li class="list-group-item">Cantidad de baños: {{ inmueble.cantidad_banos }}</li>
+          <li class="list-group-item">Tipo de inmueble: {{ inmueble.get_tipo_de_inmueble_display }}</li>
+          <li class="list-group-item">Propietario: {{ inmueble.propietario }}</li>
+          {% if user.usuario.tipo_usuario == 'arrendatario' %}
+          <a href="{% url 'generar_solicitud_arriendo' inmueble.id %}" class="btn btn-primary">Generar Solicitud de Arriendo</a>
+          {% endif %}
+          {% if user.usuario.tipo_usuario == 'arrendador' %}
+          <a href="{% url 'editar_inmueble' inmueble.id %}" onclick="return confirm('¿editar?');">editar Inmueble</a>
+          <a href="{% url 'eliminar_inmueble' inmueble.id %}" onclick="return confirm('¿quieres eliminar?');">eliminar Inmueble</a>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+  
+{% endblock %}
