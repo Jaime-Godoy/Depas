@@ -1,3 +1,4 @@
+[
 {
     "model": "auth.user",
     "pk": 1,
@@ -3167,3 +3168,4 @@
         "propietario": 3
     }
 }
+]
