@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*','https://depas-igfm.onrender.com/']
+ALLOWED_HOSTS = ['*','depas-igfm.onrender.com/']
 CSRF_TRUSTED_ORIGINS = ['https://localhost:8000','https://depas-igfm.onrender.com']
 
 LOGIN_REDIRECT_URL = 'index'
