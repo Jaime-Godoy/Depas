@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['*','https://depas-igfm.onrender.com/']
-CSRF_TRUSTED_ORIGINS = ['https://localhost:8000','https://depas-igfm.onrender.com/']
+CSRF_TRUSTED_ORIGINS = ['https://localhost:8000','https://depas-igfm.onrender.com']
 
 LOGIN_REDIRECT_URL = 'index'
 LOGIN_URL = 'login'  # URL a la que se redirige si un usuario no está autenticado y trata de acceder a una vista protegida
